@@ -1,0 +1,591 @@
+@charset "utf-8"
+/* CSS Document */
+
+$fonts: "Roboto" sans-serif
+$header-color: #313234
+
+body
+	margin: 0
+	font-family: 100% $fonts
+
+*
+	box-sizing: border-box
+
+.container
+	width: 100%
+	max-width: 1200px
+	margin: auto
+
+
+.row
+	&:before,
+	&:after
+		content: ""
+		display: table
+		clear: both
+	
+
+[class*="col-"]
+	width: 100%
+	padding: 12px
+	float: left
+
+
+/* HEADER */
+header
+	background-color: $header-color
+	height: 70px
+
+.container
+	max-width: 1200px
+	margin: 0 auto
+
+
+header > nav > .logo
+	padding: 10px 0
+	display: inline-block
+
+
+header > nav ul 
+	margin: 0
+	padding: 0
+	list-style-type: none
+	display: inline-block
+	float: right
+
+
+header
+	nav
+		ul
+			&:before,
+			&:after 
+				content: ""
+				clear: both
+				display: table
+
+
+header > nav ul > li 
+	display: inline-block
+
+
+header > nav ul > li a
+	line-height: 50px
+	padding: 0 20px
+	display: block
+	text-decoration: none
+	text-transform: uppercase
+	color: #fff
+	font-family: "Roboto"
+
+
+header
+	nav
+		ul
+			li
+				&:hover
+					a
+						background-color: #414244
+
+
+/* JUMBOTRON */
+.hero
+	width: 100%
+	height: 60vh
+	padding-top: 15vh
+	box-sizing: border-box
+	text-align: center
+	background-image: url(https://static.pexels.com/photos/325185/pexels-photo-325185.jpeg)
+	background-size: cover
+	background-position: center
+	overflow: hidden
+
+.slogan 
+	width: 800px
+	background-color: rgba(0, 0, 0, 0.6)
+	float: right
+	text-align: left
+	padding: 10px
+	color: #fff
+	text-transform: uppercase
+
+.hero .slogan h1
+	font-weight: 100
+	font-size: 44px
+	margin-bottom: 0
+
+
+.hero .slogan h2 
+	font-weight: 700
+	font-size: 34px
+	margin-top: 0
+
+
+
+/* Content */
+section > .container
+	margin: 50px auto
+	text-align: center
+
+
+.features h1
+	text-transform: uppercase
+	font-weight: 400
+
+
+.icon-diamond
+	width: 155px
+	height: 155px
+	border: 0
+	background-color: #313332
+	border-radius: 15%
+	margin: 0px
+	cursor: pointer
+	font-size: 60px
+	line-height: 75px
+	transition: ease-in-out .3s
+
+
+.icon-diamond:hover
+	transform: scale(1.10)
+
+
+.diamond-yellow
+	color: #f17f1a
+
+
+.diamond-yellow:hover
+	background-color: #f17f1a
+	color: #fff
+
+
+.icon-laptop
+	width: 155px
+	height: 155px
+	border: 0
+	background-color: #00c7e8
+	border-radius: 15%
+	margin: 0px
+	cursor: pointer
+	font-size: 60px
+	line-height: 75px
+	transition: ease-in-out .3s
+
+.icon-laptop:hover
+	transform: scale(1.10)
+
+.laptop-blue 
+	color: #fff
+	
+.laptop-blue:hover
+	background-color: #2d2f2e
+	color: #00c7e8
+
+.icon-service
+	width: 155px
+	height: 155px
+	border: 0
+	background-color: #f17f1a
+	border-radius: 15%
+	margin: 0px
+	cursor: pointer
+	font-size: 60px
+	line-height: 75px
+	transition: ease-in-out .3s
+
+.icon-service:hover
+	transform: scale(1.10)
+
+.service-yellow
+	color: #fff
+
+.service-yellow:hover
+	background-color: #2d2f2e
+	color: #00c7e8
+
+.icons .diamond h1
+	color: #313332
+	text-transform: uppercase
+
+
+.icons .laptop h1
+	color: #00c7e8
+	text-transform: uppercase
+
+.icons .service h1
+	color: #f17f1a
+	text-transform: uppercase
+
+/* Gallery */
+
+.images
+	height: 300px
+	background-size: cover
+	padding: 0
+
+
+.img-1
+	background-image: url(http://i.imgur.com/AGEgF5B.jpg)
+
+.img-2
+	background-image: url(http://i.imgur.com/7Ff7rDB.jpg)
+
+.img-3
+	background-image: url(http://i.imgur.com/KUt6tGb.jpg)
+
+.img-4
+	background-image: url(http://i.imgur.com/Ue2tUMV.jpg)
+
+.layer
+	color: transparent
+	background-color: transparent
+	height: 100%
+	transition: ease-in-out .3s
+	text-align: center
+	line-height: 300px
+
+.layer i
+	cursor: pointer
+
+
+.images:hover .layer
+	color: #fff
+	background-color: rgba(0, 0, 0, 0.6)
+
+.layer i
+	margin: 5px
+
+/* Team */
+
+.team 
+	padding-top: 50px
+	padding-bottom: 50px
+
+.team img
+	border-radius: 50%
+
+
+/* Promo */
+.promo
+	height: inherit
+	background-image: url(https://images.pexels.com/photos/27117/pexels-photo-27117.jpg?w=1260&h=750&auto=compress&cs=tinysrgb)
+	background-size: cover
+	background-position: center
+	overflow: hidden
+
+.promo .container
+	margin: 0 auto
+
+.tablet
+	height: 500px
+
+.promo .tablet-image
+	background-image: url(http://www.bartweb.eu/kodilla/tablet.png)
+	background-position: bottom left
+	background-repeat: no-repeat
+	background-size: 60%
+
+.promo-slogan
+	padding-top: 80px
+
+
+.promo .promo-slogan h2
+	font-size: 40px
+	font-weight: 900
+	text-align: left
+	color: #fff
+	text-transform: uppercase
+	margin-bottom: 0
+
+.promo .info p
+	font-size: 18px
+	font-weight: 100
+	text-align: left
+	color: #fff
+	margin-top: 0
+
+
+.promo-s
+	display: none
+
+
+/* Numbers */
+.nmb .nmb-info h1
+	color: #313332
+	font-size: 60px
+	font-weight: 900
+	margin-bottom: 0
+
+.nmb .nmb-info h3
+	color: #00c7e8
+	font-size: 24px
+	font-weight: 400
+	text-transform: uppercase
+	margin-top: 0
+
+/* Footer */
+.footer .container
+	text-align: left
+
+.footer 
+	background-color: #313332
+	height: inherit
+	color: #fff
+
+.footer h1 
+	display: inline-block
+	
+	
+.footer hr 
+	display: inline-block
+	width: 30%
+
+/* Social */
+.youtube
+	width: 39px
+	height: 39px
+	border: 0
+	background-color: #00c8e9
+	border-radius: 15%
+	margin: 0px
+	cursor: pointer
+	font-size: 14px
+	line-height: 14px
+	transition: ease-in-out .3s
+
+.youtube:hover
+	transform: scale(1.10)
+
+
+.icon-social 
+	width: 39px
+	height: 39px
+	border: 0
+	background-color: #00c7e8
+	border-radius: 15%
+	margin: 0px
+	cursor: pointer
+	font-size: 24px
+	line-height: 24px
+	margin-right: 5px
+	transition: ease-in-out .3s
+
+.icon-social:hover
+	transform: scale(1.0)
+
+.icon
+	color: #fff
+
+.icon:hover 
+	background-color: #f17f1a
+	color: #fff
+
+.copyright
+	background-color: #252726
+	color: #fff
+	padding: 5px
+	margin-top: 0
+	margin-bottom: 0
+
+/*RWD*/
+@media(max-width: 767px) 
+	header 
+		height: 235px
+	
+	
+	header > nav > div 
+		display: block
+	
+	
+	header > nav > .logo 
+		padding: 10px 0
+		display: table
+		margin: 0 auto
+	
+
+	header > nav ul 
+		margin: 0
+		padding: 0
+		list-style-type: none
+		display: block
+		float: none
+	
+
+	header > nav ul > li 
+		display: block
+		text-align: center
+	
+
+	header > nav ul > li a 
+		line-height: 50px
+		padding: 0 20px
+		display: block
+		text-decoration: none
+		text-transform: uppercase
+		color: #fff
+		font-family: "Roboto"
+	
+
+	.slogan 
+		width: 80%
+		background-color: rgba(0, 0, 0, 0.6)
+		float: right
+		text-align: left
+		padding: 10px
+		color: #fff
+		text-transform: uppercase
+	
+	
+	.hero .slogan h1 
+		font-weight: 100
+		font-size: 1.7em
+		margin-bottom: 0
+	
+	
+	.hero .slogan h2 
+		font-weight: 700
+		font-size: 1.7em
+		margin-top: 0
+	
+	
+	/* Promo */
+	.promo 
+		display: none
+	
+	
+	.promo-s 
+		display: block
+		height: inherit
+		background-image: url(https://images.pexels.com/photos/27117/pexels-photo-27117.jpg?w=1260&h=750&auto=compress&cs=tinysrgb)
+		background-size: cover
+		background-position: center
+		overflow: hidden
+	
+
+	.promo-s .container 
+		margin: 0 auto
+	
+
+	.tablet 
+		height: 500px
+	
+	
+	.promo-s .tablet-image 
+		background-image: url(http://www.bartweb.eu/kodilla/tablet.png)
+		background-position: bottom left
+		background-repeat: no-repeat
+		background-size: 70%
+	
+	
+	
+	.promo-slogan 
+		padding-top: 80px
+	
+	
+	.promo-s .promo-slogan h2 
+		font-size: 40px
+		font-weight: 900
+		text-align: left
+		color: #fff
+		text-transform: uppercase
+		margin-bottom: 0
+	
+	
+	.promo-s .info p 
+		font-size: 18px
+		font-weight: 100
+		text-align: left
+		color: #fff
+		margin-top: 0
+	
+
+
+@media (max-width: 767px)
+	/* For tablets: */
+	.col-s-1
+		width: 8.33%
+	.col-s-2
+		width: 16.66%
+	.col-s-3
+		width: 25%
+	.col-s-4
+		width: 33.33%
+	.col-s-5
+		width: 41.66%
+	.col-s-6
+		width: 50%
+	.col-s-7
+		width: 58.33%
+	.col-s-8
+		width: 66.66%
+	.col-s-9
+		width: 75%
+	.col-s-10
+		width: 83.33%
+	.col-s-1
+		width: 91.66%
+	.col-s-12
+		width: 100%
+
+
+@media (min-width: 768px) 
+	/* For desktop: */
+	.col-m-1
+		width: 8.33%
+	.col-m-2
+		width: 16.66%
+	.col-m-3
+		width: 25%
+	.col-m-4
+		width: 33.33%
+	.col-m-5
+		width: 41.66%
+	.col-m-6
+		width: 50%
+	.col-m-7
+		width: 58.33%
+	.col-m-8
+		width: 66.66%
+	.col-m-9
+		width: 75%
+	.col-m-10
+		width: 83.33%
+	.col-m-11
+		width: 91.66%
+	.col-m-12
+		width: 100%
+	.col-13
+		width: 20%
+	.col-14
+		width: 40%
+	.col-15
+		width: 60%
+	.col-16
+		width: 80%
+	.col-17
+		width: 100%
+
+
+	.col-offset-0
+		margin-left: 0
+	.col-offset-1
+		margin-left: 8.33%
+	.col-offset-2
+		margin-left: 16.66%
+	.col-offset-3
+		margin-left: 25%
+	.col-offset-4
+		margin-left: 33.33%
+	.col-offset-5
+		margin-left: 41.66%
+	.col-offset-6
+		margin-left: 50%
+	.col-offset-7
+		margin-left: 58.33%
+	.col-offset-8
+		margin-left: 66.66%
+	.col-offset-9
+		margin-left: 75%
+	.col-offset-10
+		margin-left: 83.33%
+	.col-offset-11
+		margin-left: 91.66%
